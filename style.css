@@ -14,7 +14,7 @@ ul {
 
 .box {
     border-radius: 30px;
-    padding: 10px;
+    padding: 12px;
 }
 
 /*************************************
@@ -24,7 +24,7 @@ header {
     height: 75px;
     background-color: #0084fd;
 }
-    .container {
+    .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -47,14 +47,40 @@ header {
         background-color: white;
     }
 
-
-
-
  /*************************************
             MAIN
  *************************************/
 
+/******* Application *******/
+.application {
+    height: 865px;
+    /* debug */
+    background-color: bisque;
+}
 
+    .container {
+        height: 715px;
+        margin: 100px 375px;
+        /* debug */
+        background-color: aquamarine;
+    }
+
+    .card {
+        width: calc(100% / 3);
+        background-color: #b5ddff;
+        /* debug */
+        border: 2px solid black;
+        min-height: 200px;
+    }
+
+    .card .big {
+        width: calc((100% / 3)*2);
+    }
+
+    .application > .container {
+        display: flex;
+
+    }
 
 
 
