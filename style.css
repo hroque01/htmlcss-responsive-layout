@@ -65,6 +65,12 @@ header {
         background-color: aquamarine;
     }
 
+    .cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .card {
         width: calc(100% / 3);
         background-color: #b5ddff;
@@ -73,8 +79,8 @@ header {
         min-height: 200px;
     }
 
-    .card .big {
-        width: calc((100% / 3)*2);
+    .card.big {
+        width: calc( (100% / 3) * 2);
     }
 
     .application > .container {
