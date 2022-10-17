@@ -24,6 +24,8 @@ ul {
     background-color: aquamarine;
 }
 
+
+
 /*************************************
             HEADER
  *************************************/
@@ -243,7 +245,156 @@ header {
             margin-top: 30px;
         }
 
- 
+ /******* Planning *******/
+.benefits {
+    height: 1200px;
+    background-color: #9792e4;
+}
+    .benefits > .container {
+        height: 1120px;
+        background-color: #9792e4;
+    }
+
+    .grid > h1 {
+        font-size: 35px;
+        padding: 75px 0;
+        color: white;
+        text-align: center;
+    }
+
+    .grid-box {
+        width: calc( 100% / 3);
+        height: 450px;
+        margin-bottom: 30px;
+        border-radius: 30px;
+        background-color: white ;
+    }
+
+    .grid-cards {
+        display: flex;
+        gap: 30px;
+    }
+
+    .info-grid-cards {
+        width: 90%;
+        margin: 0 5%;
+        padding-top: 45px;
+    }
+
+        .info-grid-cards > h1 {
+            font-size: 50px;
+            color: #9792e4;
+            margin-bottom: 15px;
+        }
+
+        .info-grid-cards > h3 {
+            margin-bottom: 15px;
+            color: #9792e4;
+        }
+
+        .info-grid-cards > p {
+            width: 72%;
+            color: grey;
+            line-height: 32px;
+        }
+
+        .info-grid-cards > .box {
+            width: 40%;
+            margin: 7%;
+            color: white;
+            background-color: #9792e4;
+            text-align: center;
+        }
+
+        .more > a {
+            color: white;
+            text-decoration: none;
+        }
+
+ /******* Benefits *******/
+.about-us {
+    height: 680px;
+    margin: 100px 0;
+}
+
+    .about-us > .container {
+        height: 680px;
+        background-color: white;
+    }
+
+    .about-us-blocks {
+        display: flex;
+    }
+    
+        .about-us-left {
+            width: 65%;
+            height: 580px;
+            margin: 50px;
+        }
+
+        .about-us-left > h1 {
+            font-size: 55px;
+            color: #9792e4;
+            margin-bottom: 55px;
+        }
+
+        .about-us-left > p {
+            font-size: 20px;
+            margin-bottom: 70px;
+            line-height: 32px;
+        }
+
+        .about-us-right {
+            width: 35%;
+            height: 580px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 60px;
+            position: relative;
+        }
+
+        .about-us-right > h2 {
+            width: 70%;
+            padding-top: 20px;
+            font-size: 28px;
+            color: #9792e4;
+            line-height: 40px;
+        }
+
+        .about-us-rounded {
+            display: inline-block; 
+            position: relative; 
+            width: 200px; 
+            height: 200px; 
+            overflow: hidden; 
+            border-radius: 50%; 
+        }
+
+        .about-us-rounded > img {
+            width: auto; 
+            height: 100%; 
+            margin-left: 0px;
+        }
+
+        .about-us-right > .box {
+            margin-top: 30px;
+            margin-right: 70px;
+            background-color: #9792e4;
+        }
+
+        .box a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #quotes {
+            font-size: 70px;
+            color: #9792e4;
+            position: absolute;
+            right: 80px;
+            top: 50px;
+        }
  /*************************************
             FOOTER
  *************************************/
