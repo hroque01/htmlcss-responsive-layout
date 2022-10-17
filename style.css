@@ -72,15 +72,16 @@ header {
     }
 
     .card {
-        width: calc(100% / 3);
+        width: calc(93% / 3);
         background-color: #b5ddff;
+        border-radius: 35px;
+        margin: 10px;
         /* debug */
-        border: 2px solid black;
         min-height: 200px;
     }
 
     .card.big {
-        width: calc( (100% / 3) * 2);
+        width: calc( (96% / 3) * 2);
     }
 
     .application > .container {
