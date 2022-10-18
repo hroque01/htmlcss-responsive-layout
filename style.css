@@ -245,7 +245,7 @@ header {
             margin-top: 30px;
         }
 
- /******* Planning *******/
+ /******* Benefits *******/
 .benefits {
     height: 1200px;
     background-color: #9792e4;
@@ -311,7 +311,7 @@ header {
             text-decoration: none;
         }
 
- /******* Benefits *******/
+ /******* About us *******/
 .about-us {
     height: 680px;
     margin: 100px 0;
@@ -395,6 +395,67 @@ header {
             right: 80px;
             top: 50px;
         }
+
+ /******* get started *******/
+.get-started {
+    width: 100%;
+    height: 623px;
+    background-color: #9792e4;
+}
+
+    .start {
+        text-align: center;
+        height: 623px;
+    }
+
+    .start > h5 {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    .start > h2 {
+        font-size: 40px;
+        color: white;
+    }
+
+    .start > h1 {
+        font-size: 80px;
+        color: #fdc15f;
+        margin: 60px 0px;
+    }
+
+    .start > p {
+        color: white;
+        margin: 0 38%;
+        line-height: 32px;
+    }
+
+    .start > .box {
+        display: inline-block;
+        background-color: white;
+        border-radius: 1px solid black;
+        padding: 20px 60px;
+        margin: 32px 0 ;  
+    }
+
+    .start .box > a {
+        font-size: 20px;
+        color: #9792e4;
+    }
+
+    .privacy {
+        color: white;
+    }
+
+    .privacy i {
+        font-size: 5px;
+        vertical-align: middle;
+    }
+
+    .privacy a {
+        color: white;
+    }
+
  /*************************************
             FOOTER
  *************************************/
