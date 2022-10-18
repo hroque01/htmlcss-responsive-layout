@@ -43,7 +43,7 @@ header {
 
     nav ul {
         display: flex;
-        gap: 30px;
+        gap: 20px; 
     }
 
     li a {
@@ -63,8 +63,6 @@ header {
 /******* Application *******/
 .application {
     min-height: 715px;
-    /* debug */
-    background-color: bisque;
 }
 
     .cards {
@@ -90,7 +88,6 @@ header {
 
     .application > .container {
         display: flex;
-
     }
 
 
@@ -161,17 +158,17 @@ header {
         }
 
         .box-card > h3 {
-            font-size: 25px;
+            font-size: 1.563rem ;
         }
 
         .box-card > p {
             width: 75%;
-            padding-top: 30px;
+            padding: 18px 25px;
             font-style: italic;
         }
 
         .box-card > span {
-            margin-top: 30px;
+            margin-top: 15px;
             background-color: #9792e4;
             border-radius: 50%;
             padding: 5px 15px;
@@ -196,12 +193,13 @@ header {
 
         .partners-info > h1 {
             margin: 50px 0;
-            font-size: 40px;
+            font-size: 2.5rem;
             color: #9792e4;
         }
 
         .partners-info > p {
             width: 80%;
+            font-size: 1rem;
             margin: 0 10%;
             margin-bottom: 50px;
         }
@@ -218,28 +216,25 @@ header {
     }
     
         .rounded-img {
-            display: inline-block; 
-            position: relative; 
-            width: 200px; 
-            height: 200px; 
-            overflow: hidden; 
-            border-radius: 50%; 
+            width: 180px;
+            height: 180px;
         }
 
         .rounded-img >img {
-            width: auto; 
-            height: 100%; 
-            margin-left: -50px;
-        }
+            width: 100%; 
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        } 
 
         .person-info {
             width: 70%;
-            font-size: 16px;
+            font-size: 1.125rem;
             color: white;
         }
 
         .person-info > i {
-            font-size: 25px;
+            font-size: 1.5rem;
         }
 
         .person-info > h2 {
@@ -283,7 +278,7 @@ header {
     }
 
         .info-grid-cards > h1 {
-            font-size: 50px;
+            font-size: 3.125rem;
             color: #9792e4;
             margin-bottom: 15px;
         }
@@ -334,13 +329,13 @@ header {
         }
 
         .about-us-left > h1 {
-            font-size: 55px;
+            font-size: 3.5rem;
             color: #9792e4;
             margin-bottom: 55px;
         }
 
         .about-us-left > p {
-            font-size: 20px;
+            font-size: 1.25rem;
             margin-bottom: 70px;
             line-height: 32px;
         }
@@ -358,7 +353,7 @@ header {
         .about-us-right > h2 {
             width: 70%;
             padding-top: 20px;
-            font-size: 28px;
+            font-size: 1.75rem;
             color: #9792e4;
             line-height: 40px;
         }
@@ -400,13 +395,13 @@ header {
  /******* get started *******/
 .get-started {
     width: 100%;
-    height: 623px;
+    min-height: 623px;
     background-color: #9792e4;
 }
 
     .start {
         text-align: center;
-        height: 623px;
+        min-height: 623px;
     }
 
     .start > h5 {
@@ -465,7 +460,7 @@ header {
  *************************************/
 footer {
     background-color: #333333;
-    height: 225px;
+    min-height: 225px;
 }
 
     footer p {
@@ -486,3 +481,24 @@ footer {
     .footer-links > a {
         color: #9792e4;
     }
+
+ /*************************************
+        BREAKPOINT 1024PX
+ *************************************/
+
+ @media all and (max-width: 1024px) {
+
+    .container {
+        width: 85%;
+    }
+
+    .planning-container {
+        width: 85%;
+    }
+
+ }
+
+
+ /*************************************
+        HAMBURGER AT 968PX
+ *************************************/
