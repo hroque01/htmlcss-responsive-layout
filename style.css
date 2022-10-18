@@ -1,7 +1,7 @@
 /*************************************
             REGOLE GENERALI 
  *************************************/
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,10 +18,8 @@ ul {
 }
 
 .container {
-    height: 715px;
-    margin: 0 375px;
-    /* debug */
-    background-color: aquamarine;
+    margin: 0 auto;
+    width: 60%;
 }
 
 
@@ -38,8 +36,9 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 375px;
+        margin: 0 auto;
         padding: 20px;
+        width: 60%;
     }
 
     nav ul {
@@ -63,28 +62,30 @@ header {
 
 /******* Application *******/
 .application {
-    height: 715px;
+    min-height: 715px;
     /* debug */
     background-color: bisque;
 }
 
     .cards {
         width: 100%;
+        min-height: 715px;
         display: flex;
+        justify-content: space-evenly;
         flex-wrap: wrap;
+        gap: 10px;
     }
 
     .card {
-        width: calc(93% / 3);
+        width: calc(100% / 3 - 10px);
         background-color: #b5ddff;
         border-radius: 35px;
-        margin: 10px;
         /* debug */
         min-height: 200px;
     }
 
     .card.big {
-        width: calc( (96% / 3) * 2);
+        width: calc( (100% / 3) * 2 - 15px);
     }
 
     .application > .container {
@@ -143,7 +144,7 @@ header {
 
         .box-card {
             width: 90%;
-            height: 550px;
+            min-height: 550px;
             margin-top: 280px;
             display: flex;
             flex-direction: column;
@@ -247,11 +248,11 @@ header {
 
  /******* Benefits *******/
 .benefits {
-    height: 1200px;
+    min-height: 1115px;
     background-color: #9792e4;
 }
     .benefits > .container {
-        height: 1120px;
+        /*! min-height: 1115px; */
         background-color: #9792e4;
     }
 
@@ -264,7 +265,7 @@ header {
 
     .grid-box {
         width: calc( 100% / 3);
-        height: 450px;
+        min-height: 415px;
         margin-bottom: 30px;
         border-radius: 30px;
         background-color: white ;
@@ -277,7 +278,7 @@ header {
 
     .info-grid-cards {
         width: 90%;
-        margin: 0 5%;
+        margin: 0 30px;
         padding-top: 45px;
     }
 
@@ -293,7 +294,7 @@ header {
         }
 
         .info-grid-cards > p {
-            width: 72%;
+            width: 90%;
             color: grey;
             line-height: 32px;
         }
@@ -313,12 +314,12 @@ header {
 
  /******* About us *******/
 .about-us {
-    height: 680px;
+    min-height: 680px;
     margin: 100px 0;
 }
 
     .about-us > .container {
-        height: 680px;
+        min-height: 680px;
         background-color: white;
     }
 
@@ -328,8 +329,8 @@ header {
     
         .about-us-left {
             width: 65%;
-            height: 580px;
-            margin: 50px;
+            min-height: 580px;
+            margin-left: 50px;
         }
 
         .about-us-left > h1 {
@@ -345,8 +346,8 @@ header {
         }
 
         .about-us-right {
-            width: 35%;
-            height: 580px;
+            width: 350px;
+            min-height: 580px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -409,6 +410,9 @@ header {
     }
 
     .start > h5 {
+        font-size: 20px;
+        font-weight: normal;
+        color: #d5d4f4;
         padding-top: 60px;
         padding-bottom: 30px;
     }
@@ -459,3 +463,26 @@ header {
  /*************************************
             FOOTER
  *************************************/
+footer {
+    background-color: #333333;
+    height: 225px;
+}
+
+    footer p {
+        text-align: center;
+        margin: 0 38%;
+        padding: 30px 0;
+        line-height: 22px;
+        color: white;
+    }
+
+    .footer-links {
+        text-align: center;
+        margin: 0 39%;
+        padding-top: 30px;
+        color: white;
+    }
+
+    .footer-links > a {
+        color: #9792e4;
+    }
