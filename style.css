@@ -581,6 +581,7 @@ footer {
 
  @media all and (max-width: 810px) {
 
+     /******* application *******/
     .container {
         width: 95%;
     }
@@ -666,16 +667,88 @@ footer {
         BREAKPOINT SMARTPHONE 480PX
  *************************************/
 @media screen and (max-width: 480px) {
-        /******* Planning *******/
-        .planning {
-            height: 1925px;
-        }
 
-        .txt > p {
-            font-size: 1.25rem;
-        }
+    .container {
+        width: 85%;
+    }
 
-        .box-card {
-            margin-top: 50px;
-        }
+    .card {
+        width: 100%;
+    }
+
+    .card.big {
+        width: 100%;
+    }
+    /******* Planning *******/
+    .planning {
+        height: 1925px;
+    }
+
+    .txt > p {
+        font-size: 1.25rem;
+    }
+
+    .box-card {
+        margin-top: 50px;
+    }
+
+    /******* Testimonials*******/
+    .testimonials {
+        min-height: 2100px;
+    }
+
+    .person {
+        min-height: 500px;
+        flex-wrap: wrap;
+    }
+
+    .person-info {
+        width: 90%;
+        text-align: center;
+    }
+
+    /******* Benefits *******/
+    .grid-box {
+        width: 100%;
+    }
+
+    /******* About Us *******/
+    .about-us-blocks {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .about-us-left {
+        width: 100%;
+        margin-left: 0px;
+      }
+
+      .about-us-right > h2 {
+        width: 100%;
+      }
+
+      .about-us-right > .box {
+        margin-right: 165px;
+      }
+
+      .about-us-rounded {
+        margin-right: 40%;
+      }
+
+      #quotes {
+        right: 145px;
+      }
+
+      /***** Get started ***** */
+      .start {
+        min-height: 715px;
+      }
+
+      .start > p {
+        margin: 0 10%;
+      }
+
+      footer p {
+        margin: 0 11%;
+      }
 }
