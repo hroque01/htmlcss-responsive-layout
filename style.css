@@ -27,7 +27,12 @@ ul {
 /*************************************
             HEADER
  *************************************/
-
+header {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 0;
+}
 nav {
     min-height: 75px;
     max-width: 100%;
@@ -109,7 +114,7 @@ nav {
 /******* Application *******/
 .application {
     min-height: 715px;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
     .cards {
@@ -131,12 +136,75 @@ nav {
 
     .card.big {
         width: calc( (100% / 3) * 2 - 15px);
+        display: flex;
     }
 
+    .card-text {
+        width: 50%;
+        margin: 5%;
+    }
+    
+    .card-text > h2 {
+        color: #0084fd;
+    }
+
+    .card-text > h5 {
+        margin-top: 35px;
+        font-size: 1.2rem;
+        color: #5a6e7f;
+        line-height: 32px;
+    }
+
+    .card-img  {
+        width: 50%;
+        display: flex;
+        align-self: end;
+    }
+
+    .card-img > img {
+        width: 70%;
+    }
+    
     .application > .container {
         display: flex;
     }
 
+   .card-text > .box {
+    width: 70%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #0084fd;
+   }
+
+   #appstore {
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+   #appstore > span {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+   }
+
+   .icons {
+        font-size: 5rem;
+        text-align: center;
+        margin-top: 30px;
+        color: #0084fd;
+    }
+
+    .card-title {
+        text-align: center;
+        margin-top: 20px;
+        color: #0084fd;
+    }
+
+    .card-title > h5 {
+        font-size: 1.2rem;
+        color: #5a6e7f;
+        line-height: 32px;
+        margin: 15px 10px;
+    }
 
 /******* Planning *******/
 .planning {
@@ -536,6 +604,15 @@ footer {
 
  @media all and (max-width: 1140px) {
 
+    .nav-bar {
+        width: 85%;
+        padding-top: 15px;
+    }
+
+    .card-img > img {
+        width: 100%;
+    }
+
     .container {
         width: 85%;
     }
@@ -590,6 +667,14 @@ footer {
         width: 95%;
         padding-top: 15px;
     }
+
+    .card.big {
+        flex-wrap: wrap;
+      }
+
+      .card-text {
+        width: 100%;
+      }
         /******* Planning *******/
     .planning {
         height: 2100px;
@@ -672,11 +757,27 @@ footer {
         width: 85%;
     }
 
+    .cards {
+        gap: 20px;
+    }
     .card {
         width: 100%;
     }
 
     .card.big {
+        width: 100%;
+    }
+
+    .card-text {
+        width: 100%;
+        margin: 9%;
+    }
+    
+    .card-text > .box {
+        width: 100%;
+    }
+
+    .card-img {
         width: 100%;
     }
     /******* Planning *******/
