@@ -27,7 +27,9 @@ ul {
 /*************************************
             HEADER
  *************************************/
+
 nav {
+    min-height: 75px;
     max-width: 100%;
     background-color: #0084fd;
 }
@@ -304,7 +306,7 @@ nav {
     }
 
     .grid-box {
-        width: calc( 100% / 3);
+        width: calc( 100% / 3 - 20px);
         min-height: 415px;
         margin-bottom: 30px;
         border-radius: 30px;
@@ -313,7 +315,8 @@ nav {
 
     .grid-cards {
         display: flex;
-        gap: 30px;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     .info-grid-cards {
@@ -576,43 +579,103 @@ footer {
         BREAKPOINT IPAD 810PX
  *************************************/
 
- /******* Planning *******/
-.planning {
-    height: 2100px;
+ @media all and (max-width: 810px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .nav-bar {
+        width: 95%;
+        padding-top: 15px;
+    }
+        /******* Planning *******/
+    .planning {
+        height: 2100px;
+    }
+
+    .block-left {
+        max-width: 100%;
+    }
+
+    .txt > p {
+        width: 100%;
+    }
+
+    .txt > h1 {
+        font-size: 4rem;
+    }
+
+    .planning-container {
+        flex-direction: column;
+    }
+
+    .block-right {
+        max-width: 100%;
+        height: 1505px;
+    }
+
+    .box-card {
+        width: 100%;
+        margin-top: 115px;
+    }
+
+    .box-card  > img {
+        width: 100%;
+
+    }
+
+
+    .box-card > span {
+        margin-bottom: 30px;
+    }
+
+    /******* testimonials *******/
+    .partners-info > p {
+        width: 100%;
+        font-size: 1.15rem;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .grid-box {
+        width: calc(50% - 10px);
+    }
+
+    /******* About us *******/
+    .about-us-left {
+        width: 55%;
+    }
+
+    /******* get started *******/
+    .start > p {
+        margin: 0 20%;
+    }
+
+    footer p {
+        margin: 0 22%;
+    }
+
+    .footer-links {
+        margin: 0 20%;
+    }
 }
+ 
 
-.block-left {
-    max-width: 100%;
-}
+  /*************************************
+        BREAKPOINT SMARTPHONE 480PX
+ *************************************/
+@media screen and (max-width: 480px) {
+        /******* Planning *******/
+        .planning {
+            height: 1925px;
+        }
 
-.txt > p {
-    width: 100%;
-}
+        .txt > p {
+            font-size: 1.25rem;
+        }
 
-.txt > h1 {
-    font-size: 4rem;
-}
-
-.planning-container {
-    flex-direction: column;
-  }
-
-.block-right {
-    max-width: 100%;
-    height: 1505px;
-}
-
-.box-card {
-    width: 100%;
-    margin-top: 115px;
-}
-
-.box-card  > img {
-    width: 100%;
-
-}
-
-
-.box-card > span {
-    margin-bottom: 30px;
+        .box-card {
+            margin-top: 50px;
+        }
 }
